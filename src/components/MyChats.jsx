@@ -23,7 +23,8 @@ const MyChats = ({ fetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        "http://localhost:5000/api/chat",
+        "https://chat-app-backend-flax.vercel.app/api/chat",
+        // "http://localhost:5000/api/chat",
         config
       );
 

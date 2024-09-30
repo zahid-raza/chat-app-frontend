@@ -51,7 +51,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/user",
+        "https://chat-app-backend-flax.vercel.app/api/user",
         {
           name,
           email,

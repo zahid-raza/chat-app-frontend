@@ -77,7 +77,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `https://chat-app-backend-flax.vercel.app/api/user?search=${search}`,
         config
       );
 
@@ -106,7 +106,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/chat`,
+        `https://chat-app-backend-flax.vercel.app/api/chat`,
         { userId },
         config
       );
